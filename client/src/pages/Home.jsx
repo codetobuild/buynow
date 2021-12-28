@@ -14,15 +14,9 @@ const Home = () => {
       <Navbar />
       <Slider />
       <Categories />
-<<<<<<< HEAD
       <Products />
       <Newsletter />
       <Footer />
-=======
-      <Products/>
-      <Newsletter/>
-      <Footer/>
->>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
     </div>
   );
 };

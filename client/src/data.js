@@ -27,28 +27,19 @@ export const categories = [
     id: 1,
     img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     title: "SHIRT STYLE!",
-<<<<<<< HEAD
     cat: "shirt",
-=======
->>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
   },
   {
     id: 2,
     img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     title: "LOUNGEWEAR LOVE",
-<<<<<<< HEAD
     cat: "lounge",
-=======
->>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
   },
   {
     id: 3,
     img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     title: "LIGHT JACKETS",
-<<<<<<< HEAD
     cat: "jacket",
-=======
->>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
   },
 ];
 
