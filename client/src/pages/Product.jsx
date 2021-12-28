@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import axios from "axios";
+=======
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
@@ -7,15 +10,22 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
+<<<<<<< HEAD
 import { useLocation } from "react-router-dom";
 import { publicRequest } from "../requestMethods";
+=======
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+<<<<<<< HEAD
   ${mobile({ padding: "10px", flexDirection: "column" })}
+=======
+  ${mobile({ padding: "10px", flexDirection:"column" })}
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
 `;
 
 const ImgContainer = styled.div`
@@ -94,7 +104,10 @@ const AmountContainer = styled.div`
   display: flex;
   align-items: center;
   font-weight: 700;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
 `;
 
 const Amount = styled.span`
@@ -115,12 +128,18 @@ const Button = styled.button`
   cursor: pointer;
   font-weight: 500;
 
+<<<<<<< HEAD
   &:hover {
     background-color: #f8f4f4;
+=======
+  &:hover{
+      background-color: #f8f4f4;
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
   }
 `;
 
 const Product = () => {
+<<<<<<< HEAD
   const location = useLocation();
   const productId = location.pathname.split("/")[2];
 
@@ -154,12 +173,15 @@ const Product = () => {
 
   };
   
+=======
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
   return (
     <Container>
       <Navbar />
       <Announcement />
       <Wrapper>
         <ImgContainer>
+<<<<<<< HEAD
           <Image src={product.img} />
         </ImgContainer>
         <InfoContainer>
@@ -183,16 +205,53 @@ const Product = () => {
                 {product.size?.map((item) => (
                   <FilterSizeOption key={item}>{item}</FilterSizeOption>
                 ))}
+=======
+          <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+        </ImgContainer>
+        <InfoContainer>
+          <Title>Denim Jumpsuit</Title>
+          <Desc>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
+            iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
+            tristique tortor pretium ut. Curabitur elit justo, consequat id
+            condimentum ac, volutpat ornare.
+          </Desc>
+          <Price>$ 20</Price>
+          <FilterContainer>
+            <Filter>
+              <FilterTitle>Color</FilterTitle>
+              <FilterColor color="black" />
+              <FilterColor color="darkblue" />
+              <FilterColor color="gray" />
+            </Filter>
+            <Filter>
+              <FilterTitle>Size</FilterTitle>
+              <FilterSize>
+                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>S</FilterSizeOption>
+                <FilterSizeOption>M</FilterSizeOption>
+                <FilterSizeOption>L</FilterSizeOption>
+                <FilterSizeOption>XL</FilterSizeOption>
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
               </FilterSize>
             </Filter>
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
+<<<<<<< HEAD
               <Remove onClick={() => handleQuantity("decrease")} />
               <Amount>{quantity}</Amount>
               <Add onClick={() => handleQuantity("increase")} />
             </AmountContainer>
             <Button onClick={handleClick}>ADD TO CART</Button>
+=======
+              <Remove />
+              <Amount>1</Amount>
+              <Add />
+            </AmountContainer>
+            <Button>ADD TO CART</Button>
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
           </AddContainer>
         </InfoContainer>
       </Wrapper>

@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import Pay from "./pages/Pay";
+<<<<<<< HEAD
 import Success from "./pages/Success";
 import "./App.css";
 
@@ -42,6 +43,18 @@ const App = () => {
 
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
+=======
+import { BrowserRouter } from "react-router-dom";
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Home />
+      <ProductList />
+      <Register />
+      <Login />
+      <Cart />
+      <Pay />
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
     </BrowserRouter>
   );
 };

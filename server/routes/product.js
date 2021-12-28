@@ -66,7 +66,6 @@ Router.get("/", async (req, res) => {
     const newQuery = req.query.new;
     const categoryQuery = req.query.category;
 
-    console.log(req.query);
 
     let products = [];
 
@@ -77,10 +76,17 @@ Router.get("/", async (req, res) => {
         categories: { $in: [categoryQuery] },
       });
     } else {
+<<<<<<< HEAD
       products = await Product.find();
     }
     // console.log(products);
 
+=======
+      console.log("products");
+
+      products = await Product.find();
+    }
+>>>>>>> 783c20030809a80e3f2d8c4e20f65ca5f7f3f2d1
     res.status(200).json(products);
   } catch (err) {
     console.log(err);
